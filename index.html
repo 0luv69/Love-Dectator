@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Love meter</title>
+  <link rel="stylesheet"  href="style.css">
+  
+</head>
+<body>
+  <div id="main_box">
+    <p id="title_name">Love <span id="emoji1 ">❤️</span>Meter</p>
+    <div id="love_meter">
+      <div id="first_person">
+        <label for="person1">Enter Your name:</label>
+        <input type="text" id="person1_input" name="person1"  placeholder="Ur name" required>
+      </div>
+      <div id="middle_distributer">
+          <span id="middle_heart">❤️</span>
+      </div>
+      <div id="second_person"> 
+        <label for="person2">Enter Patner's Name:</label>
+        <input type="text" id="person2_input" name="person2" placeholder="Ur love once name" required>
+      </div>
+    </div>
+    <input id="love-button" type="submit" onclick="calculateLove()" value="Calculate Love">
+    <div id="results"></div>
+  </div>
+  
+  <div id="error-box" >
+    <p id="error-message"></p>
+  </div>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
+
+
